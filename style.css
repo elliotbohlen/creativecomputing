@@ -1,12 +1,4 @@
-h1 {
-  color: blue;
-  background-color: yellow;
-  border: 1px solid black;
-  font-family: "Gill Sans";
-  font-weight: lighter;
-
-}
-
-p {
-  color: red;
-}
+body {
+  font-family: monospace;
+   text-align: justify;
+ }
