@@ -19,3 +19,8 @@ body {
 
    }
 a:link {color: red;}
+
+#subtitle { color: gray;
+  font-style: italic;
+  
+}
