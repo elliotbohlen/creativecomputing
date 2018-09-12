@@ -1,18 +1,29 @@
+
+h1{ /* make kerning crazy wide
+make it red
+make a hover */
+color:#ea0000;
+letter-spacing: 4px;
+ text-align: center;
+}
+
+
 body {
-  font-family: 'Josefin Sans', sans-serif;
-   text-align: justify;
-
-
+   font-family: 'Josefin Sans', sans-serif;
+   text-align: center;
  }
 
-p {
-  color: gray;
-}
+   a:hover {
+       color: white;
+       background-color: red;
 
-link {
-  color: blue;
-}
+   }
+a:link {color: red;}
 
+#subtitle { color: gray;
+  font-style: italic;
+
+}
 
 /*
 h1 {
