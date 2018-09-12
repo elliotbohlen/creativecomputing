@@ -2,8 +2,13 @@
 h1{
   /*  make a hover,change to serif/lowercase when hover? */
 color:#ea0000;
+position: sticky; /*  sticky isnt working */
+top: 20px;
 letter-spacing: 4px;
- text-align: center;
+text-align: center;
+background-color: white;
+text-decoration: none;
+
 }
 
 body {
@@ -11,25 +16,27 @@ body {
    text-align: center;
  }
 
+ div { padding: 10px
+ }
+
    /* LINKS */
-
-   a:link { color: #ea0000;}
+   a:link { color: #ea0000;
+   text-decoration: none;}
    a:visited {color: #ea0000;}
-   a:hover { font-family: "didot", serif;
+   a:hover { font-family: "canterbury","didot", serif;
    text-transform: uppercase;
-   font-weight: bold;
 
-   }
 
-#subtitle { color: gray;
+    }
+
+#subtitle {
+  color: gray;
   font-style: italic;
-font-weight: lighter;
-
+ font-weight: lighter;
 }
 
-div { padding: 10px
-}
-/*
+
+/* test example----------------
 h1 {
   color: blue;
   background-color: yellow;

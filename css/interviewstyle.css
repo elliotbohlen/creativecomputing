@@ -1,2 +1,15 @@
-p {  color: green;
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: black;
+  color: white
 }
+
+p {  color: white;
+}
+
+/* LINKS */
+a:link { color: red;
+text-decoration: none;}
+a:visited {color: red;}
+a:hover { text-transform: uppercase;}

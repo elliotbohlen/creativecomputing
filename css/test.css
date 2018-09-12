@@ -1,1 +1,32 @@
-workign on it
+
+body {
+   font-family: 'Josefin Sans', sans-serif;
+   text-align: center;
+ }
+
+.item{
+    width: 40px;
+}
+a{
+    text-decoration:none;
+}
+.label {
+
+    color: black;
+    text-transform: uppercase;
+
+}
+.label.success {
+  ;
+}
+
+.item a p.new-label span{
+  position: relative;
+  content: 'NEW'
+}
+.item:hover a p.new-label span{
+  display: none;
+}
+.item:hover a p.new-label:after{
+  content: 'ADD';
+}
