@@ -1,0 +1,25 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+   text-align: justify;
+
+
+ }
+
+p {
+  color: gray;
+}
+
+link {
+  color: blue;
+}
+
+
+/*
+h1 {
+  color: blue;
+  background-color: yellow;
+  border: 1px solid black;
+}
+p {
+  color: red;
+}
