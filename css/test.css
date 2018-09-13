@@ -1,32 +1,56 @@
+h1{
+  padding: 6px 8px 6px 16px;
+  text-align: justify;
+  font-family: "josefin sans", sans-serif;
+  font-weight: bold;
+  font-kerning: normal;
+  font-size: 100px;
+  color: white;
 
-body {
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%;
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color:red;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    transition-property: background, border-radius;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+.sidenav:hover{
+  background: white;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+/*
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
    font-family: 'Josefin Sans', sans-serif;
-   text-align: center;
- }
-
-.item{
-    width: 40px;
-}
-a{
-    text-decoration:none;
-}
-.label {
-
-    color: black;
-    text-transform: uppercase;
-
-}
-.label.success {
-  ;
+   font-size: 20px;
+   width: 35%;
+   text-align: justify;
 }
 
-.item a p.new-label span{
-  position: relative;
-  content: 'NEW'
-}
-.item:hover a p.new-label span{
-  display: none;
-}
-.item:hover a p.new-label:after{
-  content: 'ADD';
-}
+.main a{color: red}
+.main a:hover{text-transform: uppercase;}
+.main a:visited {color:red}
