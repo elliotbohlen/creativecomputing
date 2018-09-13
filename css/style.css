@@ -8,7 +8,6 @@ letter-spacing: 4px;
 text-align: center;
 background-color: white;
 text-decoration: none;
-
 }
 
 body {
@@ -17,7 +16,7 @@ body {
  }
 
  div { padding: 10px
- }
+}
 
    /* LINKS */
    a:link { color: #ea0000;
@@ -25,21 +24,13 @@ body {
    a:visited {color: #ea0000;}
    a:hover { font-family: "canterbury","didot", serif;
    text-transform: uppercase;
-    }
+}
 
 #subtitle {
   color: gray;
   font-style: italic;
  font-weight: lighter;
 }
-
-.details {
-;
-}
-
-
-
-
 
 
 /* test example----------------
