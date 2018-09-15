@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+}
+
+#box {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+ }
+
+#mirror {
+  width: 20%;
+  position:fixed;
+  bottom:0px;
+  left:84%;
+}
+
+/* open to a full cloud image???
+how are u: yes no
+<iframe src="demo_iframe.htm" style="border:none;"></iframe>
+<iframe src="demo_iframe.htm" style="height:200px;width:300px;"></iframe>
