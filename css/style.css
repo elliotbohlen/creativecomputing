@@ -17,20 +17,37 @@ body {
 
  div { padding: 10px
 }
-
-   /* LINKS */
-   a:link { color: #ea0000;
-   text-decoration: none;}
-   a:visited {color: #ea0000;}
-   a:hover { font-family: "canterbury","didot", serif;
-   text-transform: uppercase;
+.title {
+  color:#ea0000;
+  position: sticky;
+  top: 20px;
+  letter-spacing: 4px;
+  text-align: center;
+  background-color: white;
+  text-decoration: none;
+  display: inline
 }
+
+.title:hover {
+  font-family: "canterbury","didot", serif;
+   }
+
+/* LINKS */
+a:link { color: #ea0000;
+   text-decoration: none;}
+  a:visited {color: #ea0000;}
+  a:hover { font-family: "didot", serif;
+  text-transform: uppercase;
+    }
 
 #subtitle {
   color: gray;
   font-style: italic;
  font-weight: lighter;
 }
+
+#spacing {letter-spacing: 15px;}
+
 
 
 /* test example----------------
