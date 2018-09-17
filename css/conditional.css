@@ -1,14 +1,11 @@
 body {
-text-align: left;
+  text-align: left;
   max-width: 70%;
   font-family: 'Josefin Sans', sans-serif;
-  ;
-}
+  }
 
 img {max-width:40%;}
 
-h1 {
-  color: red;
-}
+h1 {color: red;}
 
-h2{ color:red;}
+h2{color:red;}

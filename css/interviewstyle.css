@@ -8,17 +8,6 @@ h1{
   color: white;
 }
 
-#title {  padding: 6px 8px 6px 16px;
-  text-align: justify;
-  font-family: "josefin sans", sans-serif;
-  font-weight: bold;
-  font-kerning: normal;
-  font-size: 100px;
-  color: white;}
-#laughin {
-  color: red;
-  text-align: center;
-}
 /* The sidebar menu */
 .sidenav {
     height: 100%;
@@ -34,33 +23,39 @@ h1{
     transition-duration: 1.5s;
     transition-timing-function: linear;
 }
-.sidenav:hover{
-  background: white;
-}
-
-/* The navigation menu links */
-.sidenav a {
+.sidenav:hover{background: white;}
+.sidenav a { /* The navigation menu links */
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
 }
-/*
-.sidenav a:hover {
-    color: #f1f1f1;
-}
 
 /* Style page content */
 .main {
     margin-left: 160px; /* Same as the width of the sidebar */
     padding: 0px 10px;
-   font-family: 'Josefin Sans', sans-serif;
-   font-size: 19px;
-   width: 35%;
-   text-align: justify;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 19px;
+    width: 35%;
+    text-align: justify;
 }
-
 .main a{color: red}
 .main a:hover{text-transform: uppercase;}
 .main a:visited {color:red}
+
+#title {
+  padding: 6px 8px 6px 16px;
+  text-align: justify;
+  font-family: "josefin sans", sans-serif;
+  font-weight: bold;
+  font-kerning: normal;
+  font-size: 100px;
+  color: white;
+}
+
+#end {
+  color: red;
+  text-align: center;
+}
