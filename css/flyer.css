@@ -1,0 +1,37 @@
+body{
+  background-color: blue;
+
+}
+.text {
+  z-index: 1;
+  float: left;
+  font-size: 36px;
+  font-family:'Roboto Mono', monospace;;
+  color: white;
+  align-items: center;
+  text-transform: uppercase;
+
+}
+
+.content {
+  z-index: 4;
+  display:grid;
+  grid-gap: 0px;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: start;
+
+}
+
+.child1 {
+  height: 300px;
+  width:300px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.child2 {
+height: 0px;
+width:0px;
+border-radius: 50%;
+background-color: black;
+}

@@ -1,0 +1,43 @@
+#folderset {
+  width: 300px;
+  height: 400px;
+  background-color: orange;
+  position:relative;
+  top: 100px;
+  margin:0px auto;
+
+}
+
+#bluebox {
+  width: 300px;
+  height: 500px;
+  background-color: blue;
+  top: 30px;
+ transform: rotate(-20deg);
+  position:relative;
+  margin:0px auto;
+  top: -300px;
+  left: 200px;
+}
+
+#blueorb {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: lightblue;
+  margin:0px auto;
+  position: relative;
+  top:-500px;
+  right: 100px;
+}
+
+#yelloworb {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: yellow;
+  margin:0px auto;
+  position: relative;
+  top:-650px;
+  left: 500px;
+}
