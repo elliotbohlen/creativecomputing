@@ -1,27 +1,40 @@
 body{
   background-color: blue;
   width: 90%;
-align-items: center;
-margin: 15px;
+  align-items: center;
+  margin: 15px;
 }
+
+@media only screen and (max-width: 375px) {
+    .grid {
+      display:grid;
+      grid-gap: 0px;
+      grid-template-columns: auto;
+    }
+    .child1{
+      height:100%;
+      width: 100%;
+      border-radius: 50%;
+    }
+}
+
+
 .text {
-  z-index: 1;
   float: left;
   font-size: 36px;
-  font-family:'Roboto Mono', monospace;;
+  font-family:'Roboto Mono', monospace;
   color: white;
   align-items: center;
   text-transform: uppercase;
-
+  transform:scale(1);
 }
 
-.content {
+.grid {
   z-index: 4;
   display:grid;
   grid-gap: 0px;
   grid-template-columns: auto auto auto auto auto;
   justify-content: start;
-
 }
 
 .child1 {
@@ -29,11 +42,17 @@ margin: 15px;
   width:280px;
   border-radius: 50%;
   background-color: red;
+  transform:scale(1);
+}
+.child1:hover{
+  transform:scale(100);
+  transition-duration: 30s;
+  transition-timing-function: ease-in;
+  font-size:36px;
 }
 
 .child2 {
-height: 0px;
-width:0px;
-border-radius: 50%;
-background-color: black;
+  height: 0px;
+  width:0px;
+  background-color: black;
 }

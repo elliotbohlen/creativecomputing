@@ -1,0 +1,23 @@
+body{
+  background-color: blue;
+  width: 90%;
+  align-items: center;
+  margin: 15px;
+}
+
+.grid {
+  z-index: 4;
+  display:grid;
+  grid-gap: 0px;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: start;
+
+}
+
+.child1 {
+  height: 280px;
+  width:280px;
+  border-radius: 50%;
+  background-color: red;
+  transform:scale(1);
+}
