@@ -7,3 +7,7 @@ body {
   color:blue;
   text-decoration: underline;
 }
+.linky:visited {
+  color: blue;
+  text-decoration: underline;
+}
