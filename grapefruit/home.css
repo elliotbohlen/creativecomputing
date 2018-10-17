@@ -1,0 +1,28 @@
+div{
+   position: absolute;
+   top:40%;
+   left: 26%;
+   margin-right: 15%;
+
+}
+
+
+#title{
+  color: blue;
+  font-size: 85px;
+  font-style: italic;
+  text-transform: capitalize;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+color:#fa4032;
+color: #feb103,

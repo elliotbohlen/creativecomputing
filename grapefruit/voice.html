@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="grape.jpeg" type="image/gif">
+    <title>grapefruit no.1</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="VOICE.css">
+  </head>
+  <body>
+<div>
+  <h2> VOICE PIECE FOR SOPRANO </h2>
+  Scream:
+    <div id="wind" class="linky">1. against</div>
+    <div id="wall" class="linky">2. against</div>
+    <div id="sky" class="linky">3. against</div>
+    <br> Yoko Ono 1961 autumn
+  </div>
+
+<script>
+ $("document").ready(function(){
+    //once the document has loaded
+
+    var clicks = 0
+    $("#wind").click(function(){
+      $("#wind").append(" the wind")
+      $("#wind").removeClass("linky")
+
+    })
+
+    var clicks = 0
+    $("#wall").click(function(){
+      $("#wall").append(" the wall")
+      $("#wall").removeClass("linky")
+
+    })
+
+    var clicks = 0
+    $("#sky").click(function(){
+      $("#sky").append(" the sky")
+      $("#sky").removeClass("linky")
+
+    })
+  })
+</script>
+
+</body>
+</html>
