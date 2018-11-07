@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Get Weather Demo</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <style>
+
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 2rem;
+    }
+
+    .circle{
+      width: 10px;
+      height: 10px;
+      background-color: blue;
+      border-radius: 1000px;
+      transition: all 1s ease;
+    }
+
+    .scale{
+      transform: scale(1.2);
+    }
+
+    .text{
+      font-family: sans-serif;
+      font-weight: 200;
+      font-size: 2rem;
+      width: 100vw;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    #tempText{
+      color: blue;
+    }
+
+    #windText{
+      color: lightblue;
+    }
+
+    #wind{
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+<div id="tempText" class="text"></div>
+
+<div id="circles">
+  <div id="temp" class="circle"></div>
+  <div id="wind" class="circle"></div>
+</div>
+
+<div id="windText" class="text"></div>
+ 
+<script>
+  $("document").ready(function(){
+    $.ajax({
+      url: "http://api.openweathermap.org/data/2.5/weather?q=New York&units=imperial&appid=ef3e268cbe387a39c451c064de7ff0c1",
+      success: function(data) {
+        console.log(data);
+        handleData(data)
+      }
+    });
+
+    var weatherText = $("#weather") 
+    var temp, wind
+
+    function handleData(data){
+      $("#tempText").html("the current temperature is " + data.main.temp + "°")
+      $("#windText").html("the current wind speed is " + data.wind.speed + " mph")
+
+      $("#temp").css("width", data.main.temp*6);
+      $("#temp").css("height", data.main.temp*6);
+
+      $("#wind").css("width", data.wind.speed*6);
+      $("#wind").css("height", data.wind.speed*6);
+    }
+  })
+
+</script>
+ 
+</body>
+</html>

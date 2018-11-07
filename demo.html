@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+     function changeText(text)
+         {
+             var display = document.getElementById('text-display');
+             display.innerHTML = "";
+             display.innerHTML = text;
+         }
+           function changeback(text)
+         {
+             var display = document.getElementById('text-display');
+             display.innerHTML = "";
+             display.innerHTML = text;
+         }
+     </script>
+
+  </head>
+  <body>
+    <div id="box" onmouseover="changeText('Yes, this is Onmouseover Text')" onmouseout="changeback('any thing')" >
+
+    <div id="text-display" >
+    any thing
+    </div>
+  </body>
+</html>

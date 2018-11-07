@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="icon" href="../images/sky.jpg" type="image/gif">
+    <title>weatherdemo</title>
+    <link rel="stylesheet" href="weather.css">
+  </head>
+
+  <body>
+<div id="tempText"></div>
+<div id="speedText"> </div>
+<div id="testText"> </div>
+<div id="tempCircle"> </div>
+
+<script>
+$("document").ready(function(){
+   $.ajax({
+     url: "http://api.openweathermap.org/data/2.5/weather?q=New York&units=imperial&appid=ef3e268cbe387a39c451c064de7ff0c1",
+     success: function(data) {
+       handleData(data)
+     }
+   });
+
+   function handleData(data){
+     console.log(data)
+     console.log(data.name);
+     console.log(data.sys.country);
+//gets data to display on page, must div in body
+     $("#tempText").html(data.main.temp)
+     $("#speedText").html(data.wind.speed)
+     $("#testText").html(data.sys.country)
+    $("#tempCircle").css("width", data.main.temp)
+    $("#tempCircle").css("height",data.main.temp)
+   }
+
+ })
+</script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<html lang="en" dir="ltr"><head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="demo2.css">
+  </head>
+  <body>
+    <section id="sec">32</section>
+
+  <script>
+  $(function() {
+      setInterval( function() {
+        var color = 0;
+        var seconds = new Date().getSeconds();
+        $("#sec").html(seconds);
+      }, 1000 );
+  });
+
+  // function myFunction($param) {
+  //    $param.hide();  // or whatever you want to do
+  // }
+  //
+  // myFunction($('#sec'));
+  </script>
+
+</body></html>

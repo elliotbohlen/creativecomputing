@@ -1,0 +1,21 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: row; */
+  background-color: black;
+}
+
+#sec{
+  width: 100vw;
+  height: 100vw;
+  background-color: black;
+  /* border-radius: 300px; */
+  /* margin-top: 150px; */
+  position: relative;
+  transition: all .3s ease;
+  color: yellow;
+  text-align: center;
+  font-size:700px;
+  font-family: sans-serif;
+}

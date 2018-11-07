@@ -1,0 +1,16 @@
+body{
+font-size: 25px;
+font-family: 'VT323', monospace;
+background-color: #f2f2f2;
+color: #33333;
+}
+
+#tempCircle{
+  background-color:black;
+  border-radius: 50%;
+}
+
+#tempText:hover{
+  color:white;
+
+}

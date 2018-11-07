@@ -45,7 +45,11 @@ a:hover {
 #spacing {letter-spacing: 15px;}
   /* to make space wider between first and last name */
 
-
+#wiggle {
+  width: 30%;
+  align-items: center;
+  right: 10px;
+}
 
 /* test example----------------
 h1 {
