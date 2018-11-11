@@ -1,16 +1,70 @@
 body{
 font-size: 25px;
 font-family: 'VT323', monospace;
-background-color: #f2f2f2;
+background-color: #e6e6e6;
 color: #33333;
+margin-left: 10px;
 }
 
-#tempCircle{
-  background-color:black;
-  border-radius: 50%;
+#info{
+  position:relative;
+  left: 0%;
 }
 
 #tempText:hover{
   color:white;
+}
+#tempText:hover:after{
+  content:" temperature";
+}
 
+#speedText:hover{
+  color:white;
+}
+#speedText:hover:after{
+  content:" wind speed";
+}
+#humText:hover{
+  color:white;
+}
+#humText:hover:after{
+  content:" humidity";
+}
+
+#coordsText{
+  text-transform: uppercase;
+}
+#coordsText:hover{
+  color:white;
+}
+#coordsText:hover:after{
+  content:" (40.73, -73.99)";
+}
+
+
+
+
+
+#pic{
+  position: relative;
+  top: 100%;
+}
+
+#tempCircle{
+  position: relative;
+  background-color:black;
+  width: 35px;
+
+}
+#speedCircle{
+  position: relative;
+  background-color:black;
+  width: 35px;
+  left: 35px;
+}
+#humCircle{
+  position: relative;
+  background-color:black;
+  width: 35px;
+  left: 70px;
 }
