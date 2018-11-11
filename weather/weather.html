@@ -41,7 +41,7 @@ $("document").ready(function(){
      $("#coordsText").html(data.name + "  //  " +data.sys.country)
      $("#tempText").html(data.main.temp)
      $("#speedText").html(data.wind.speed)
-     $("#humText").html(data.main.humidity + "%")
+     $("#humText").html(data.main.humidity)
 
     $("#tempCircle").css("height",data.main.temp * 10)
     $("#speedCircle").css("height",data.wind.speed * 10)

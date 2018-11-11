@@ -15,30 +15,29 @@ margin-left: 10px;
   color:white;
 }
 #tempText:hover:after{
-  content:" temperature";
+  content:"°F temperature";
 }
 
 #speedText:hover{
   color:white;
 }
 #speedText:hover:after{
-  content:" wind speed";
+  content:" mph wind speed";
 }
 #humText:hover{
   color:white;
 }
 #humText:hover:after{
-  content:" humidity";
+  content:"% humidity";
 }
-
 #coordsText{
   text-transform: uppercase;
 }
 #coordsText:hover{
   color:white;
-}
+  }
 #coordsText:hover:after{
-  content:" (40.73, -73.99)";
+  content:" // (40.73, -73.99)";
 }
 
 
@@ -54,7 +53,6 @@ margin-left: 10px;
   position: relative;
   background-color:black;
   width: 35px;
-
 }
 #speedCircle{
   position: relative;
