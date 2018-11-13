@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)file:///Users/elliotbohlen/Documents/CREATIVECOMPUTING/creativecomputing/clock/demo1.htm -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title></title>
+    <script type="text/javascript" src="file:///Users/elliotbohlen/Documents/CREATIVECOMPUTING/creativecomputing/clock/demo1_files/jquery.min.js"></script>
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: black;
+      }
+      #clock{
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 300px;
+        margin-top: 150px;
+      }
+      #sec{
+        position: relative;
+        background-color: white;
+        width: 2px;
+        height: 150px;
+        top: 0px;
+        left: 150px;
+        transform-origin: bottom;
+        transition: all .3s ease;
+      }
+
+    </style>
+  </head>
+  <body style="background-color: rgb(12, 12, 12);">
+    <div id="clock">
+      <section id="sec" style="transform: rotate(72deg);"></section>
+      <section id="hour"></section>
+      <section id="min"></section>
+    </div>
+  
+  <script>
+  $(function() {
+      setInterval( function() {
+        var color = 0;
+        var seconds = new Date().getSeconds();
+        //   var hours = new Date().getHours();
+        //   var mins = new Date().getMinutes();
+        var sdegree = seconds * 6;
+        var srotate = "rotate(" + sdegree + "deg)";
+        if(color < 255){
+          color = seconds;
+        } else {
+          color = 0;
+        }
+        $("#sec").css({ "transform": srotate });
+        $("body").css({ "background-color": "rgba("+color+","+color+","+color+", 1)" });
+
+      }, 1000 );
+  });
+  </script>
+
+</body></html>

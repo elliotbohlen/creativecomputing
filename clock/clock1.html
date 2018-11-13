@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)http://parsons.callil.com/course-materials/class-9/resources/index.html -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="demo1.css">
+    <script type="text/javascript" src="./demo1_files/jquery.min.js"></script>
+  </head>
+
+    <div id="clock">
+      <section id="sec" style="transform: rotate(252deg);"></section>
+      </div>
+      <section id="hours" style="transform: rotate(252deg);"></section>
+      <section id="mins" style="transform: rotate(252deg);"></section>
+
+
+
+</style>
+</div>
+
+    </div>
+  </script>
+</script>
+
+</div>
+</div>
+  <script>
+  $(function() {
+      setInterval( function() {
+        var color = 0;
+        var seconds = new Date().getSeconds();
+      //  var hours = new Date().getHours();
+      //  var mins = new Date().getMinutes();
+
+        var sdegree = seconds * 6;
+        //var hdegree = hours * 6;
+        //var mdegree = minutes * 6;
+
+        var srotate = "rotate(" + sdegree + "deg)";
+        //var hrotate = "rotate(" + hdegree + "deg)";
+        //var mrotate = "rotate(" + mdegree + "deg)";
+
+        if(color < 255){
+          color = seconds;
+        } else {
+          color = 0;
+        }
+        $("#sec").css({ "transform": srotate });
+        //$("#hours").css({ "transform": hrotate });
+        //$("#mins").css({ "transform": mrotate });
+
+      }, 1000 );
+  });
+  </script>
+
+</body></html>
