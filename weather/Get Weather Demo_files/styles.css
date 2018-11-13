@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 2rem;
+    padding-top: 0px;
+    font-family: sans-serif;
+    font-weight: 200;
+  }
+
+  #container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;;
+  }
+
+  .circle{
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 1000px;
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #city-name{
+    color: white;
+  }
+
+  .scale{
+    transform: scale(1.2);
+  }
+
+  .text{
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    width: 100vw;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  #tempText{
+    color: blue;
+  }
+
+  #windText{
+    color: lightblue;
+  }
+
+  #wind{
+    background-color: lightblue;
+  }
+
+  #city{
+    text-align: center;
+  }
+
+  #city-name{
+      text-align: center;
+      font-weight: 500;
+  }
+
+  form{
+    width: 100vw;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input{
+    border: none;
+    font-size: 24px;
+    background-color: rgba(255,255,255,0);
+  }
+
+
+  *:focus {
+    outline: none;
+}

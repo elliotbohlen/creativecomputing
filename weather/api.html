@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="icon" href="../images/sky.jpg" type="image/gif">
+    <title>weathertime</title>
+    <link rel="stylesheet" href="weather.css">
+  </head>
+  <body>
+
+<form id="form">
+  <input id="input1" type="text" name="hello-field" value="" placeholder="say hi">
+  <input id="input2" type="text" name="name-field" value="" placeholder="name">
+
+  <input type="submit" name="" value="go">
+</form>
+
+<div id="inputs">
+
+
+value: already in text box in load
+placeholder: grayed out
+input type submit button
+name: identifies it
+input id: for calling it in script
+</div>
+
+<script type="text/javascript">
+$("#form").submit(function(event) {
+  console.log($("#input1").val())
+//  console.log($("#input2").val())
+  var userInput = $("#input1").val()
+
+  if (userInput = "hello"){
+  $("#inputs").prepend("<div>  hey  </div>") } //if input, then output
+
+  //$("#inputs").append("<div>" + userInput + "</div>") //.html for replacing, not append
+  event.preventDefault(); //keeps it from refreshing
+});
+</script>
+
+  </body>
+</html>

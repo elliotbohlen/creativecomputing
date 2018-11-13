@@ -1,11 +1,23 @@
 body{
-font-size: 25px;
+font-size: 27px;
 font-family: 'VT323', monospace;
 background-color: #e6e6e6;
 color: #33333;
 margin-left: 10px;
 }
+#target{
+  position:fixed;
+  right:35px;
+  bottom: 35px;
+}
+.formy{
+  font-size:25px;
+  font-family: 'VT323', monospace;
+  color: #33333;
+  width:160px;
+  height:30px;
 
+}
 #info{
   position:relative;
   left: 0%;

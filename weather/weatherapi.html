@@ -10,10 +10,6 @@
   </head>
 
   <body>
-    <form id="target">
-      <input class="formy" id="city" type="text" placeholder="Your City" value="">
-    </form>
-
     <div id="info">
 <div id="coordsText"> </div>
 <div id="tempText"></div>
@@ -30,24 +26,13 @@
 
 <script>
 $("document").ready(function(){
-    function getData(city){
-      $.ajax({
-        url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=ef3e268cbe387a39c451c064de7ff0c1",
-        success: function(data) {
-          console.log(data);
-          handleData(data)
-        }
-      });
-    }
-    var city = "New York"
-    getData(city)
+   $.ajax({
+     url: "http://api.openweathermap.org/data/2.5/weather?q=New%20York&units=imperial&appid=ef3e268cbe387a39c451c064de7ff0c1",
+     success: function(data) {
+       handleData(data)
+     }
+   });
 
-    $( "#target" ).submit(function( event ) {
-        city = $("#city").val()
-        getData(city)
-        $( "#target" ).val("In" + city)
-        event.preventDefault();
-    });
    function handleData(data){
      console.log(data)
      console.log(data.name);
