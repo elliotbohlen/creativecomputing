@@ -27,7 +27,7 @@
 <script>
 $("document").ready(function(){
    $.ajax({
-     url: "http://api.openweathermap.org/data/2.5/weather?q=New York&units=imperial&appid=ef3e268cbe387a39c451c064de7ff0c1",
+     url: "http://api.openweathermap.org/data/2.5/weather?q=New%20York&units=imperial&appid=ef3e268cbe387a39c451c064de7ff0c1",
      success: function(data) {
        handleData(data)
      }
@@ -43,9 +43,9 @@ $("document").ready(function(){
      $("#speedText").html(data.wind.speed)
      $("#humText").html(data.main.humidity)
 
-    $("#tempCircle").css("height",data.main.temp * 10)
-    $("#speedCircle").css("height",data.wind.speed * 10)
-    $("#humCircle").css("height",data.main.humidity * 10)
+    $("#tempCircle").css("height",data.main.temp * 11)
+    $("#speedCircle").css("height",data.wind.speed * 11)
+    $("#humCircle").css("height",data.main.humidity * 11)
 
    }
 
