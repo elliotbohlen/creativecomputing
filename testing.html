@@ -4,20 +4,17 @@
     <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="icon" href="../images/sky.jpg" type="image/gif">
-    <title>weathertime</title>
+    <title>api</title>
     <link rel="stylesheet" href="weather.css">
 
   </head>
 
   <body>
-
     <div id="info">
 <div id="coordsText"> </div>
 <div id="tempText"></div>
 <div id="speedText"> </div>
 <div id="humText"> </div>
-
-
   </div>
 
 <div id="pic">
@@ -26,44 +23,25 @@
  <div id="speedCircle"> </div>
  <div id="humCircle"> </div>
 
- <div class="formy">
-     <form id="target">
-       <input class="formy" id="city" type="text" placeholder="Your City" value="">
-     </form>
- </div>
 
 <script>
-$("document").ready(function(){
-    function getData(city){
-      $.ajax({
-        url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=ef3e268cbe387a39c451c064de7ff0c1",
-        success: function(data) {
-          console.log(data);
-          handleData(data)
-        }
-      });
+  $.ajax({
+    url: 'https://randomuser.me/api/',
+    dataType: 'json',
+    success: function(data) {
+      console.log(data);
     }
-    var city = "New York"
-    getData(city)
+  });
 
-    $( "#target" ).submit(function( event ) {
-        city = $("#city").val()
-        getData(city)
-        $( "#target" ).val("In" + city)
-        event.preventDefault();
-    });
    function handleData(data){
      console.log(data)
      console.log(data.name);
      console.log(data.sys.country);
-     console.log(data.weather);
 //gets data to display on page, must div in body
      $("#coordsText").html(data.name + "  //  " +data.sys.country)
      $("#tempText").html(data.main.temp)
      $("#speedText").html(data.wind.speed)
      $("#humText").html(data.main.humidity)
-    // $("#sydText").html(data.weather.description)
-
 
     $("#tempCircle").css("height",data.main.temp * 11)
     $("#speedCircle").css("height",data.wind.speed * 11)

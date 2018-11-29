@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="icon" href="../images/sky.jpg" type="image/gif">
     <title>mirror me</title>
     <link rel="stylesheet" href="mirrorme.css">
@@ -9,17 +10,37 @@
   <body>
 
 <div> <!--how r u + radio toggle-->
-  <p> how are you? </p>
-<form>
+<p> how are you? </p>
+  <form id="form">
+    <input id="input1" type="text" name="hello-field" value="" placeholder="">
+    <input type="submit" name="" value="?">
+  </form>
+
+<div id="inputs"> ,</div>
+
+<script type="text/javascript">
+$("#form").submit(function(event) {
+  console.log($("#input1").val())
+//  console.log($("#input2").val())
+  var userInput = $("#input1").val()
+
+  if (userInput = "hello"){
+  $("#inputs").html("  direction:ltr  ") } //if input, then output
+
+  //$("#inputs").append("<div>" + userInput + "</div>") //.html for replacing, not append
+  event.preventDefault(); //keeps it from refreshing
+});
+</script>
+  <!--<form>
   <input type="radio" name="x" value="male"> good<br>
   <input type="radio" name="x" value="female"> bad<br>
 </form></div>
 
-<div> <!--empty box-->
+<div> <empty box
   <textarea id="box" name="message" rows="14" cols="30">
   lets talk...
 </textarea></div>
-
+-->
 <div> <!--mirror-->
   <img id="mirror" src="../images/mirror.jpg">
 </div>

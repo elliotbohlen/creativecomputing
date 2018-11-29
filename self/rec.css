@@ -1,0 +1,50 @@
+body{
+  background-image: url(../images/tr/an.jpg);
+  margin: 30px;
+}
+
+p{
+  margin: 10px;
+}
+#left{
+  margin:0px;
+}
+#ticket{
+position: sticky;
+margin:0 auto;
+  height:650px;
+  width: 350px;
+  background:white;
+  border-style: outset;
+  text-align: center;
+
+}
+
+#come{
+position: absolute;
+align-items: center;
+text-align: left;
+height:120px;
+width:250px;
+left:50px;
+bottom:50px;
+  border-style: solid;
+  border-width: thin;
+}
+#comedream{
+
+}
+#righttill{
+  position:absolute;
+  align-items: left;
+  width: 129px;
+  margin-right: 15px;
+  width: 129px;
+  right: 30px;
+}
+#lefttill{
+position: absolute;
+align-items: left;
+width: 129px;
+margin-left: 15px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="icon" href="../images/sky.jpg" type="image/gif">
+    <title>title</title>
+    <link rel="stylesheet" href="whiteorg.css">
+  </head>
+  <body>
+
+<div class="pix">
+    <img id="b"src="images/ascii1.png" alt="">
+    <img id="a"src="images/ascii2.png" alt="">
+    <img id="a"src="images/ascii3.png" alt="">
+    <img id="a"src="images/ascii4.png" alt="">
+    <img id="a"src="images/ascii5.png" alt="">
+    <img id="a"src="images/ASCII6.png" alt="">
+    <img id="a"src="images/asciiarrowhand.png" alt="">
+    <img id="a"src="images/asciihand.png" alt="">
+    <img id="a"src="images/asciisnake.png" alt="">
+   </div>
+
+<script type="text/javascript">
+$("document").ready(function(){
+      function getData(advice){
+        $.ajax({
+          url: "https://api.adviceslip.com/advice",
+          success: function(data) {
+            console.log(data);
+            handleData(data)
+          }
+        });
+      }
+      var advice =
+      getData(advice)
+
+    //  $( "#target" ).submit(function( event ) {
+        //  city = $("#city").val()
+        //  getData(city)
+      //    $( "#target" ).val("In" + city)
+      //    event.preventDefault();
+      });
+    //  function handleData(data){
+       console.log(data)
+      // console.log(data.name);
+      // console.log(data.sys.country);
+      // console.log(data.weather);
+
+</script>
+  </body>
+</html>
