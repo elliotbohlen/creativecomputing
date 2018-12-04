@@ -8,7 +8,31 @@ body{
   width: 100%;
   margin: 0;
 }
+.content{
+  position: absolute;
+  text-align: center;
+  top: 63%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  text-transform: lowercase;
+}
 
+button{
+  position:absolute;
+  bottom: 200px;
+  left: 38%;
+   background-color: black;
+   color: white;
+   font-family: 'VT323', monospace;
+   font-size: 20px;
+}
+
+button:hover{
+  background-color: white;
+  color: black;
+}
 #hand{
   position: absolute;
   padding: 10px;
@@ -109,20 +133,4 @@ body{
   left: 38%;
   bottom: 45px;
 
-}
-
-.content{
-  position: absolute;
-  text-align: center;
-  top: 65%;
-  left: 49%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  height: 400px;
-}
-
-.photos{
-  position: absolute;
-  width: 40%;
-  height: auto;
 }

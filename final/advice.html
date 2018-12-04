@@ -3,31 +3,42 @@
   <head>
     <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="icon" href="../images/sky.jpg" type="image/gif">
-    <title>title</title>
+    <title>need a hand?</title>
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link rel="stylesheet" href="advice.css">
   </head>
   <body>
 
-    <img id="hand" class="pix"src="images/lginvhand.png" alt="">
-    <img id="six" class="pix"src="images/lginv6.png" alt="">
-    <img id="five" class="pix"src="images/lginv5.png" alt="">
-    <img id="three" class="pix"src="images/lginv3.png" alt="">
-    <img id="one" class="pix"src="images/lginv1.png" alt="">
-    <img id="two" class="pix"src="images/lginv2.png" alt="">
-    <img id="four" class="pix"src="images/lginv4.png" alt="">
-  <!--  <img id="arrow" class="pix"src="images/lginvarrow.png" alt=""> !-->
-    <img id="snake"class="pix"src="images/lginvsnake.png" alt="">
+    <img id="hand" class="draggable" class="ui-widget-content" class="pix"src="images/lginvhand.png" alt="">
+    <img id="six" class="draggable" class="ui-widget-content" class="pix"src="images/lginv6.png" alt="">
+    <img id="five" class="draggable" class="ui-widget-content" class="pix"src="images/lginv5.png" alt="">
+    <img id="three" class="draggable" class="ui-widget-content" class="pix"src="images/lginv3.png" alt="">
+    <img id="one" class="draggable" class="ui-widget-content" class="pix"src="images/lginv1.png" alt="">
+    <img id="two" class="draggable" class="ui-widget-content" class="pix"src="images/lginv2.png" alt="">
+    <img id="four" class="draggable" class="ui-widget-content" class="pix"src="images/lginv4.png" alt="">
+  <!--  <img id="arrow" class="pix"src="images/lginvarrow.png" alt=""> !-->  <img id="snake" class="draggable" class="ui-widget-content" class="pix"src="images/lginvsnake.png" alt="">
 
 <div class="content">
-  <p>need a hand?<p>
-  <!--<img src="imdages/pppp.gif" alt="">!-->
+  <em>need a hand?</em>
   <p id="advice"></p>
+  <button type="submit"  onClick="refreshPage()">i need more</button>
 </div>
 
-
 <script>
+
+//drag
+$( function() {
+   $( ".draggable" ).draggable();
+ } );
+
+//refresh https://stackoverflow.com/questions/29884654/button-that-refresh-page-on-click
+ function refreshPage(){
+     window.location.reload();
+ }
+//apis https://api.adviceslip.com/#top
 $("document").ready(function(){
     function getData(advice){
       $.ajax({
@@ -47,61 +58,10 @@ $("document").ready(function(){
      var result = $.parseJSON( data );
      console.log(result.slip.advice)
      $("#advice").html(result.slip.advice)
-
-
-//gets data to display on page, must div in body
-
-    //$("#tempText").html(data.main.temp)
-     //$("#speedText").html(data.wind.speed)
-    // $("#humText").html(data.main.humidity)
-
-  //  $("#tempCircle").css("height",data.main.temp * 11)
-  //  $("#speedCircle").css("height",data.wind.speed * 11)
-  //  $("#humCircle").css("height",data.main.humidity * 11)
-
    }
 
  })
- // Make the DIV element draggable:
-dragElement(document.getElementsById("mydiv"));
-
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
-    // if present, the header is where you move the DIV from:
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-  } else {
-    // otherwise, move the DIV from anywhere inside the DIV:
-    elmnt.onmousedown = dragMouseDown;
-  }
-  function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // get the mouse cursor position at startup:
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
-  }
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // calculate the new cursor position:
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-  }
-  function closeDragElement() {
-    // stop moving when mouse button is released:
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-}
+  </script>
 </script>
   </body>
 </html>
