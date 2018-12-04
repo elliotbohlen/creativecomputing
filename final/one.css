@@ -66,8 +66,30 @@ width:auto;
 
 }
 #snake{
-position: absolute;
-height:100%;
-width:auto;
+  position: absolute;
+  height:100%;
+  width:auto;
+  }
 
+#oo{
+  position:absolute;
+  height:100%;
+  width:100%;
 }
+#o{
+  position:absolute;
+  height:100%;
+  width:100%;
+}
+#ooo{
+  position:absolute;
+  height:100%;
+  width:100%;}
+#oooo{
+  position:absolute;
+  height:100%;
+  width:100%;}
+#ooooo{
+  position:absolute;
+  height:100%;
+  width:100%;}
