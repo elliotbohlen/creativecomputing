@@ -4,21 +4,23 @@
     <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="icon" href="../images/sky.jpg" type="image/gif">
-    <title>title</title>
+    <title>need a hand?</title>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link rel="stylesheet" href="blackorg.css">
   </head>
   <body>
-<a href="/advice.html" class="photos">
+<a href="final/advice.html" class="photos">
+<img id="hand" class="pix"src="images/lginvhand.png" alt="">
+<img id="six" class="pix"src="images/lginv6.png" alt="">
+<img id="five" class="pix"src="images/lginv5.png" alt="">
+<img id="three" class="pix"src="images/lginv3.png" alt="">
 <img id="one" class="pix"src="images/lginv1.png" alt="">
 <img id="two" class="pix"src="images/lginv2.png" alt="">
-<img id="three" class="pix"src="images/lginv3.png" alt="">
-<img id="four" class="pix"src="images/lginv4.png" alt="">
-<img id="five" class="pix"src="images/lginv5.png" alt="">
-<img id="six" class="pix"src="images/lginv6.png" alt="">
+<!-- <img id="four" class="pix"src="images/lginv4.png" alt=""> !-->
 <img id="arrow" class="pix"src="images/lginvarrow.png" alt="">
-<img id="hand" class="pix"src="images/lginvhand.png" alt="">
 <img id="snake"class="pix"src="images/lginvsnake.png" alt="">
 </div>
+
 <script>
 var myIndex = 0;
 carousel();
@@ -33,7 +35,6 @@ function carousel() {
     if (myIndex > x.length) {myIndex = 1}
     x[myIndex-1].style.display = "block";
     setTimeout(carousel, 500); // Change image every 2 seconds
-
 }
 </script>
 
