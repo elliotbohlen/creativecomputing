@@ -1,0 +1,41 @@
+
+  body{
+margin: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+  }
+  #clock{
+    position: fixed;
+    left: 70px;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    align-items: center;
+  }
+  #sec{
+position: fixed;
+    background-color: black;
+    bottom:0px;
+    width: 2px;
+    height: 100%;
+    transform-origin: center;
+    transition: all .3s ease;  }
+  #hours{
+position: fixed;
+    background-color: black;
+    width: 2px;
+    height: 1300px;
+    transform-origin: center;
+    transition: all .3s ease;
+  }
+
+  #mins{
+position: fixed;
+    background-color: black;
+    width: 2px;
+    height: 1300px;
+    transform-origin: center;
+    transition: all .3s ease;
+  }

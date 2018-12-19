@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="icon" href="../images/red.jpg" type="image/gif">
+    <title>clocks</title>
+    <link rel="stylesheet" href="clock2.css">
+  </head>
+  <body>
+
+      <section id="sec"></section>
+      <section id="hour"></section>
+      <section id="min"></section>
+
+    <script>
+    $(function() {
+      setInterval( function() {
+        var seconds = new Date().getSeconds();
+
+
+          $("#sec").css("width", seconds*25);
+      }, 1000 );
+    });
+    </script>
+  </body>
+</html>
