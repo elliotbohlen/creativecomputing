@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="icon" href="../images/sky.jpg" type="image/gif">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id='game'>
+        <form id='user-input'>
+            <input type='text' id='guess-value' placeholder='1-100'></input>
+            <button id='submit'>Submit</button>
+        </form>
+         <h4 id='guess-count'>Attempts left: <span id="attempts">6</span></h4>
+    </div>
+
+    <h4 id='checker'>The value entered is <span id="value">?</span></h4>
+
+    <input type="button" id="myButt" value="Show Value" />
+    <script>
+      var guess;
+$('#submit').on("click", function (evnt) {
+    guess = $('#guess-value').val();
+    $("#value").text(guess);
+    alert(guess);
+    evnt.preventDefault();
+});
+
+$('#myButt').click(function(){
+   alert( guess );
+});
+      </script>
+
+  </body>
+</html>

@@ -12,6 +12,7 @@ div {padding: 10px}
 body {
    font-family: 'Josefin Sans', sans-serif;
    text-align: center;
+   margin-left: 30px;
  }
 
 .title {
